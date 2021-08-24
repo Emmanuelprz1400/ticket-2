@@ -1,0 +1,89 @@
+<html>
+<div class="container mt-3">
+  <h1 class="text-center">Editar perfil</h1>
+  <div style="text-align: center;">
+    <a href="index.html" class="btn btn-secondary btn-lg " tabindex="-1" role="button"
+      aria-disabled="true">lnicio</a>
+  </div>
+<br>
+
+    <form method="POST" class= "row -4 mt-3" action="/profile/editProfile/<%=id%>"></form>
+    <mat-grid-tile>
+        <input style="display: none"  formControlName="imagen" type="file" (change)="onFileChanged($event)"
+            #fileInput accept="image/png, .jpeg, .jpg, image/gif">
+        <button mat-raised-button color="accent" (click)="fileInput.click()" disabled>Subir foto de perfil</button>
+    </mat-grid-tile> 
+
+    <input type="file" style="display: 100px;">
+        <div class="col-12">
+         <div class="form-group mt-3">
+            <label for="" class="fw-bold">Nombre(s)</label>
+            <input type="text" class="form-control" name="Nombre" value="" placeholder="Ej. Emmanuel">
+         </div>
+        </div>
+        <div class="col-12">
+            <div class="form-group mt-3">
+               <label for="" class="fw-bold">Apellidos</label>
+               <input type="text" class="form-control" name="Apellidos" value="" placeholder="Ej. Pérez Hernández">
+            </div>
+           </div>
+        <div class="col-4">
+            <div class="form-group mt-3">
+                <label for="" class="fw-bold">País</label>
+                <input type="text" class="form-control" name="pais" value="" placeholder="Ej. México">
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mt-3">
+                <label for="" class="fw-bold">Ciudad</label>
+                <input type="text" class="form-control" name="ciudad" value="" placeholder="Ej. CDMX">
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="form-group mt-3">
+                <label for="" class="fw-bold">Edad</label>
+                <input type="text" class="form-control" name="edad" value="" placeholder="Ej. 21">
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-group mt-3">
+                <label for="" class="fw-bold">Estudios</label>
+                <input type="text" class="form-control" name="estudios" value="" placeholder="Último grado de estudios">
+                        
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="form-group mt-3">
+                <label for="" class="fw-bold">Idiomas</label>
+                <input type="text" class="form-control" name="idiomas" value="" placeholder="Ej. Inglés">
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mt-3">
+                <label for="" class="fw-bold">Linkedin</label>
+                <input type="text" class="form-control" name="linkedin" value="" placeholder="Link de tu perfil">
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="form-group mt-3">
+                <label for="" class="fw-bold">Hobbies</label>
+                <input type="text" class="form-control" name="hobbies" value="" placeholder="Pasatiempos favoritos">
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-group mt-3">
+                <label for="" class="fw-bold">Acerca de mí</label>
+                <textarea class="form-control" name="acerca_de_mi"  rows="3" placeholder="Escribe algo extra que quieren que sepan de ti"></textarea>       
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Editar</button>
+      </form>
+  </div>
+
+<script>src=""</script>
+</body>
+</html>
